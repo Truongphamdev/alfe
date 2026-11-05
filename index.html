@@ -22,6 +22,7 @@
   </script>
   <script src="lead-form.js" defer></script>
   <script src="motion.js" defer></script>
+  <script src="extras.js" defer></script>
 </head>
 <body class="theme-alfe">
   <a class="skip" href="#dang-ky">Bỏ qua tới form đăng ký</a>
@@ -34,13 +35,15 @@
       <a href="#dang-ky" class="btn btn--primary btn--sm" data-magnetic>Đăng ký ngay<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
     </div>
   </header>
+  <div class="progress" aria-hidden="true"></div>
   <main>
-    <section class="hero hero--cards" id="top">
+    <section class="hero hero--cards" id="top" data-particles data-pointer-parallax>
       <div class="wrap hero__grid">
         <div class="hero__copy">
           <p class="pill">Chiến dịch TikTok Shop tháng 11</p>
           <h1 class="hero__title"><span class="hero__brand">ALFE</span> <span class="hero__battle">Livestream Battle</span></h1>
           <p class="hero__tagline">Lên live càng nhiều - Quà càng lớn</p>
+          <p class="live-tag"><span class="live-dot" aria-hidden="true"></span>Đang mở cổng đăng ký</p>
           <div class="hero__product" aria-hidden="true">
             <img class="hero__img hero__img--0" src="assets/white-program-bottle.webp" alt="" loading="eager">
             <img class="hero__img hero__img--1" src="assets/beauty-conc-bottle.webp" alt="" loading="eager">
@@ -119,6 +122,9 @@
         </div>
       </div>
     </section>
+    <section class="band" aria-label="Thông điệp chiến dịch">
+      <div class="band__track"><ul><li>Livestream Battle tháng 11</li><li aria-hidden="true">✦</li><li>Đăng ký nhận sample miễn phí</li><li aria-hidden="true">✦</li><li>Đua top rinh iPad Air M4</li><li aria-hidden="true">✦</li><li>Thưởng mốc 3 - 6 - 9 phiên</li><li aria-hidden="true">✦</li><li>Commission boost +3% GMV</li><li aria-hidden="true">✦</li></ul><ul aria-hidden="true"><li>Livestream Battle tháng 11</li><li aria-hidden="true">✦</li><li>Đăng ký nhận sample miễn phí</li><li aria-hidden="true">✦</li><li>Đua top rinh iPad Air M4</li><li aria-hidden="true">✦</li><li>Thưởng mốc 3 - 6 - 9 phiên</li><li aria-hidden="true">✦</li><li>Commission boost +3% GMV</li><li aria-hidden="true">✦</li></ul></div>
+    </section>
     <section class="products" id="san-pham">
       <div class="wrap">
         <div class="sec-head sec-head--center" data-reveal>
@@ -126,19 +132,19 @@
         </div>
         <p class="sec-sub" data-reveal>Sample gửi tận nhà cho creator, gắn giỏ hàng trên TikTok Shop</p>
         <ul class="prods" data-stagger>
-          <li class="prod" data-ph>
+          <li class="prod" data-ph data-tilt>
             <figure class="prod__img"><img src="assets/beauty-conc-bottle.webp" alt="ALFE Beauty Conc" loading="lazy"></figure>
             <div class="prod__text"><h3>ALFE Beauty Conc</h3><p>5.000 mg Collagen Peptid. Hỗ trợ da sáng mịn và tăng đàn hồi.</p></div>
           </li>
-          <li class="prod" data-ph>
+          <li class="prod" data-ph data-tilt>
             <figure class="prod__img"><img src="assets/white-program-bottle.webp" alt="ALFE White Program" loading="lazy"></figure>
             <div class="prod__text"><h3>ALFE White Program</h3><p>Chiết xuất Placenta tinh khiết. Hỗ trợ da trắng mịn và tươi sáng.</p></div>
           </li>
-          <li class="prod" data-ph>
+          <li class="prod" data-ph data-tilt>
             <figure class="prod__img"><img src="assets/deep-essence-bottle.webp" alt="ALFE Deep Essence" loading="lazy"></figure>
             <div class="prod__text"><h3>ALFE Deep Essence</h3><p>Glucosylceramid. Hỗ trợ dưỡng ẩm da và tăng đàn hồi.</p></div>
           </li>
-          <li class="prod prod--wide" data-ph>
+          <li class="prod prod--wide" data-ph data-tilt>
             <figure class="prod__img"><img src="assets/powder-box.webp" alt="ALFE Beauty Conc Powder" loading="lazy"></figure>
             <div class="prod__text"><h3>ALFE Beauty Conc Powder</h3><p>Dạng bột tiện mang theo, pha cùng nước hoặc đồ uống.</p></div>
           </li>
@@ -146,12 +152,13 @@
       </div>
     </section>
     <section class="board" id="giai-thuong">
+      <p class="watermark" aria-hidden="true">BATTLE</p>
       <div class="wrap">
         <div class="sec-head" data-reveal>
           <h2>Creator - Bảng xếp hạng phiên live</h2>
           <p class="total"><i class="ph-fill ph-crown-simple" aria-hidden="true"></i>Tổng <b>40M</b></p>
         </div>
-        <article class="top1 top1--right" data-reveal data-ph>
+        <article class="top1 top1--right" data-reveal data-ph data-tilt>
           <div class="top1__text">
             <h3><i class="ph-fill ph-crown-simple" aria-hidden="true"></i>Top 1 - Giải đặc biệt</h3>
             <p class="top1__desc">Top 1 nhiều phiên live / phiên live dài nhất</p>
