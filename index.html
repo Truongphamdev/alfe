@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALFE | Collagen Nhật Bản từ Taisho</title>
+  <meta name="description" content="Đăng ký nhận ưu đãi livestream ALFE, collagen uống từ Taisho Nhật Bản.">
+  <meta property="og:title" content="ALFE | Ưu đãi livestream">
+  <meta property="og:description" content="Đăng ký nhận ưu đãi livestream ALFE, collagen uống từ Taisho Nhật Bản.">
+  <meta property="og:image" content="assets/beauty-conc-box.webp">
+  <meta name="theme-color" content="#FFF7F7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/beauty-conc-bottle.webp">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+  <script>
+    window.LP_CONFIG = {
+      brand: "alfe",
+      endpoint: "", // TODO: dán URL Apps Script /exec
+      liveAt: "2026-11-20T20:00:00+07:00" // TODO: giờ livestream chính thức
+    };
+  </script>
+  <script src="lead-form.js" defer></script>
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#dang-ky">Bỏ qua tới form đăng ký</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__logo" aria-label="ALFE trang chủ"><img src="assets/logo-alfe.webp" alt="ALFE" width="120" height="32"></a>
+      <nav class="nav__links" aria-label="Điều hướng">
+        <a href="#san-pham">Sản phẩm</a>
+        <a href="#taisho">Về ALFE</a>
+        <a href="#hoi-dap">Hỏi đáp</a>
+      </nav>
+      <div class="nav__end">
+        <a href="#dang-ky" class="btn btn--primary btn--sm">Nhận ưu đãi</a>
+        <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Mở menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="menu" id="menu">
+    <a href="#san-pham">Sản phẩm</a>
+    <a href="#taisho">Về ALFE</a>
+    <a href="#hoi-dap">Hỏi đáp</a>
+    <a href="#dang-ky" class="btn btn--primary">Nhận ưu đãi</a>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" data-pointer-parallax>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-ph>Livestream 20.11 lúc 20:00</p>
+          <h1 data-split>Rạng rỡ từ bên trong, chuẩn Nhật Bản</h1>
+          <p class="lead">Collagen peptide và sắt từ Taisho, cho làn da đàn hồi và sắc hồng tự nhiên mỗi ngày.</p>
+          <div class="hero__cta">
+            <a href="#dang-ky" class="btn btn--primary" data-magnetic>Nhận ưu đãi<span class="btn__icon"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span></a>
+            <a href="#san-pham" class="btn btn--ghost">Xem sản phẩm</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="layer" style="--d:6"><div class="hero__halo"></div></div>
+          <div class="layer" style="--d:-24"><img class="hero__bottle hero__bottle--l" src="assets/white-program-bottle.webp" alt="" width="700" height="2110"></div>
+          <div class="layer" style="--d:12"><img class="hero__bottle hero__bottle--c" src="assets/beauty-conc-bottle.webp" alt="" width="700" height="2108" fetchpriority="high"></div>
+          <div class="layer" style="--d:24"><img class="hero__bottle hero__bottle--r" src="assets/deep-essence-bottle.webp" alt="" width="700" height="2110"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-label="Nguồn gốc ALFE">
+      <div class="marquee__track"><ul><li><i class="ph ph-flag" aria-hidden="true"></i>Sản xuất tại Nhật Bản</li><li><i class="ph ph-flask" aria-hidden="true"></i>Hơn 100 năm nghiên cứu của Taisho</li><li><i class="ph ph-drop" aria-hidden="true"></i>Collagen peptide 5.000 mg</li><li><i class="ph ph-heart" aria-hidden="true"></i>Bổ sung sắt</li><li><i class="ph ph-handshake" aria-hidden="true"></i>Phân phối bởi DHG Pharma</li></ul><ul aria-hidden="true"><li><i class="ph ph-flag" aria-hidden="true"></i>Sản xuất tại Nhật Bản</li><li><i class="ph ph-flask" aria-hidden="true"></i>Hơn 100 năm nghiên cứu của Taisho</li><li><i class="ph ph-drop" aria-hidden="true"></i>Collagen peptide 5.000 mg</li><li><i class="ph ph-heart" aria-hidden="true"></i>Bổ sung sắt</li><li><i class="ph ph-handshake" aria-hidden="true"></i>Phân phối bởi DHG Pharma</li></ul></div>
+    </section>
+
+    <!-- LEAD: COUNTDOWN + FORM -->
+    <section class="lead-block" id="dang-ky">
+      <div class="wrap lead-block__grid">
+        <div class="lead-block__info" data-reveal>
+          <h2>Giữ chỗ ưu đãi trong phiên live</h2>
+          <p class="muted" data-ph>Để lại thông tin, ALFE nhắn bạn trước giờ live kèm mã quà tặng dành riêng cho người đăng ký sớm.</p>
+          <div class="countdown" data-countdown aria-label="Thời gian còn lại tới livestream">
+            <div><span data-unit="days">00</span><small>ngày</small></div>
+            <div><span data-unit="hours">00</span><small>giờ</small></div>
+            <div><span data-unit="minutes">00</span><small>phút</small></div>
+            <div><span data-unit="seconds">00</span><small>giây</small></div>
+            <p class="countdown__live">Đang livestream, vào xem ngay</p>
+          </div>
+          <ul class="perks" data-ph data-stagger>
+            <li><i class="ph ph-gift" aria-hidden="true"></i> Quà tặng cho 100 đơn đầu tiên</li>
+            <li><i class="ph ph-ticket" aria-hidden="true"></i> Mã giảm giá riêng cho người đăng ký</li>
+            <li><i class="ph ph-truck" aria-hidden="true"></i> Miễn phí giao hàng toàn quốc</li>
+          </ul>
+        </div>
+
+        <div class="bezel" data-reveal>
+        <form class="form" data-lead-form novalidate>
+          <div class="form__fields">
+            <div class="field">
+              <label for="ho_ten">Họ và tên</label>
+              <input id="ho_ten" name="ho_ten" type="text" autocomplete="name" required>
+              <p class="field__error" data-error-for="ho_ten" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="so_dien_thoai">Số điện thoại</label>
+              <input id="so_dien_thoai" name="so_dien_thoai" type="tel" inputmode="tel" autocomplete="tel" required>
+              <p class="field__error" data-error-for="so_dien_thoai" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="tinh_thanh">Tỉnh/thành</label>
+              <select id="tinh_thanh" name="tinh_thanh" required>
+                <option value="">Chọn tỉnh/thành</option>
+                <option>TP. Hồ Chí Minh</option><option>Hà Nội</option><option>Đà Nẵng</option><option>Hải Phòng</option><option>Cần Thơ</option><option>Huế</option>
+                <option>An Giang</option><option>Bắc Ninh</option><option>Cà Mau</option><option>Cao Bằng</option><option>Đắk Lắk</option><option>Điện Biên</option><option>Đồng Nai</option><option>Đồng Tháp</option><option>Gia Lai</option><option>Hà Tĩnh</option><option>Hưng Yên</option><option>Khánh Hòa</option><option>Lai Châu</option><option>Lâm Đồng</option><option>Lạng Sơn</option><option>Lào Cai</option><option>Nghệ An</option><option>Ninh Bình</option><option>Phú Thọ</option><option>Quảng Ngãi</option><option>Quảng Ninh</option><option>Quảng Trị</option><option>Sơn La</option><option>Tây Ninh</option><option>Thái Nguyên</option><option>Thanh Hóa</option><option>Tuyên Quang</option><option>Vĩnh Long</option>
+              </select>
+              <p class="field__error" data-error-for="tinh_thanh" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="san_pham">Sản phẩm quan tâm <span class="optional">(không bắt buộc)</span></label>
+              <select id="san_pham" name="san_pham">
+                <option value="">Chưa chọn</option>
+                <option>ALFE Beauty Conc</option>
+                <option>ALFE White Program</option>
+                <option>ALFE Deep Essence</option>
+                <option>ALFE Beauty Conc Powder</option>
+              </select>
+            </div>
+            <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+            <label class="check">
+              <input type="checkbox" name="dong_y" value="yes">
+              <span>Tôi đồng ý để ALFE liên hệ qua điện thoại và Zalo về chương trình này.</span>
+            </label>
+            <p class="field__error" data-error-for="dong_y" aria-live="polite"></p>
+            <button type="submit" class="btn btn--primary btn--block">
+              <span class="btn__label">Đăng ký nhận ưu đãi</span>
+              <span class="btn__icon"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+            <p class="form__status" data-form-status role="status"></p>
+          </div>
+          <div class="form__success" role="status">
+            <i class="ph ph-check-circle" aria-hidden="true"></i>
+            <h3>Đã giữ chỗ cho bạn</h3>
+            <p>ALFE sẽ nhắn bạn trước giờ livestream kèm mã ưu đãi.</p>
+            <button type="button" class="btn btn--ghost btn--sm" data-form-again>Đăng ký cho người khác</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SCROLLY -->
+    <section class="lineup" id="san-pham">
+      <div class="wrap">
+        <h2 class="section-title" data-reveal>Bốn công thức, một triết lý làm đẹp từ bên trong</h2>
+        <div class="scrolly" data-scrolly>
+          <div class="scrolly__stage" aria-hidden="true">
+            <div class="lineup__halo"></div>
+            <img class="lineup__bottle" data-img="0" src="assets/beauty-conc-bottle.webp" alt="" width="700" height="2108" loading="lazy">
+            <img class="lineup__bottle" data-img="1" src="assets/white-program-bottle.webp" alt="" width="700" height="2110" loading="lazy">
+            <img class="lineup__bottle" data-img="2" src="assets/deep-essence-bottle.webp" alt="" width="700" height="2110" loading="lazy">
+          </div>
+          <div class="scrolly__steps">
+            <article class="scrolly__step" data-step="0">
+              <h3>ALFE Beauty Conc</h3>
+              <p data-ph>Collagen peptide 5.000 mg kết hợp sắt, hỗ trợ độ đàn hồi và sắc hồng hào của làn da.</p>
+              <ul class="specs"><li>Collagen 5.000 mg</li><li>Bổ sung sắt</li><li>Chai 50 ml</li></ul>
+            </article>
+            <article class="scrolly__step" data-step="1">
+              <h3>ALFE White Program</h3>
+              <p data-ph>Dành cho làn da sáng và đều màu, tiện uống mỗi ngày.</p>
+              <ul class="specs" data-ph><li>Da sáng, đều màu</li><li>Chai 50 ml</li></ul>
+            </article>
+            <article class="scrolly__step" data-step="2">
+              <h3>ALFE Deep Essence</h3>
+              <p data-ph>Nuôi dưỡng sâu, cho làn da căng mịn và tràn sức sống.</p>
+              <ul class="specs" data-ph><li>Nuôi dưỡng sâu</li><li>Chai 50 ml</li></ul>
+            </article>
+          </div>
+        </div>
+        <article class="powder">
+          <figure class="powder__media" data-clip><img src="assets/powder-lifestyle.webp" alt="ALFE Beauty Conc Powder dạng bột hòa tan" loading="lazy" width="1200" height="800" data-parallax></figure>
+          <div class="powder__text" data-reveal>
+            <h3>ALFE Beauty Conc Powder</h3>
+            <p data-ph>Dạng bột tiện mang theo, pha cùng nước hoặc đồ uống yêu thích.</p>
+            <a href="#dang-ky" class="btn btn--light">Nhận ưu đãi<span class="btn__icon"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- DOSE (theo cách ALFE Nhật trình bày liều lượng) -->
+    <section class="dose" aria-label="Thành phần trong mỗi chai">
+      <div class="wrap dose__inner" data-reveal>
+        <div class="dose__lead">
+          <img src="assets/beauty-conc-bottle.webp" alt="" width="700" height="2108" loading="lazy">
+          <h2>Mỗi chai ALFE Beauty Conc chứa</h2>
+        </div>
+        <dl class="dose__list" data-ph>
+          <div><dt><span data-count="5000">5.000</span><small>mg</small></dt><dd>Collagen peptide</dd></div>
+          <div><dt>+ Sắt</dt><dd>Cho sắc da hồng hào</dd></div>
+          <div><dt><span data-count="8">8</span></dt><dd>Thành phần làm đẹp</dd></div>
+          <div><dt><span data-count="50">50</span><small>ml</small></dt><dd>Uống một chai mỗi ngày</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- PERSONAS -->
+    <section class="persona">
+      <div class="wrap">
+        <h2 class="section-title" data-reveal>ALFE dành cho bạn nếu</h2>
+        <ul class="persona__list" data-stagger>
+          <li><i class="ph ph-timer" aria-hidden="true"></i><p>Bận rộn, ít thời gian cho quy trình chăm da nhiều bước</p></li>
+          <li><i class="ph ph-hand-heart" aria-hidden="true"></i><p>Thấy làn da kém căng, kém đàn hồi hơn trước</p></li>
+          <li><i class="ph ph-sun-horizon" aria-hidden="true"></i><p>Hay mệt mỏi, sắc mặt thiếu tươi tắn</p></li>
+          <li><i class="ph ph-question" aria-hidden="true"></i><p>Muốn uống collagen nhưng chưa biết chọn loại nào</p></li>
+        </ul>
+        <a href="#dang-ky" class="persona__cta link" data-reveal>Để lại thông tin, ALFE tư vấn loại phù hợp <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <!-- BRAND STORY -->
+    <section class="story" id="taisho">
+      <div class="wrap story__grid">
+        <figure class="story__media" data-clip>
+          <img data-parallax src="assets/powder-box.webp" alt="Hộp ALFE Beauty Conc Powder" loading="lazy" width="1200" height="800">
+        </figure>
+        <div class="story__copy" data-reveal>
+          <h2>Hơn 100 năm nghiên cứu của Taisho Nhật Bản</h2>
+          <p>Mỗi công thức ALFE xoay quanh collagen peptide, sắt và các dưỡng chất thiết yếu, theo triết lý dịu nhẹ nhưng hiệu quả của người Nhật.</p>
+          <dl class="values">
+            <div><dt>Nuôi dưỡng</dt><dd>Chăm sóc làn da mỗi ngày từ bên trong.</dd></div>
+            <div><dt>Tinh tế</dt><dd>Hương vị dễ uống, nhỏ gọn để dùng hằng ngày.</dd></div>
+            <div><dt>Khoa học</dt><dd>Nghiên cứu và sản xuất tại Nhật Bản.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="hoi-dap">
+      <div class="wrap faq__wrap">
+        <h2 class="section-title">Câu hỏi thường gặp</h2>
+        <div class="faq__list" data-ph>
+          <details><summary>Khi nào tôi nhận được mã ưu đãi?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>ALFE gửi mã qua tin nhắn hoặc Zalo trước giờ livestream bắt đầu.</p></details>
+          <details><summary>Nên uống ALFE vào lúc nào?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>Mỗi ngày một chai, có thể uống vào buổi sáng hoặc trước khi ngủ. Nội dung chờ brand xác nhận.</p></details>
+          <details><summary>Bao lâu thì thấy hiệu quả?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>Nội dung chờ brand xác nhận theo hồ sơ công bố.</p></details>
+          <details><summary>Mua ALFE chính hãng ở đâu?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>Nội dung chờ brand cung cấp danh sách kênh bán chính thức.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="closing">
+      <div class="wrap closing__inner" data-reveal>
+        <h2>Hẹn bạn ở phiên live tối 20.11</h2>
+        <a href="#dang-ky" class="btn btn--light" data-magnetic>Nhận ưu đãi<span class="btn__icon"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <img src="assets/logo-alfe.webp" alt="ALFE" width="100" height="27">
+      <p class="footer__legal">Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</p>
+      <p class="footer__meta" data-ph>Số XNQC: [chờ brand cung cấp] · Phân phối bởi Công ty Cổ phần Dược Hậu Giang</p>
+    </div>
+  </footer>
+
+  <a href="#dang-ky" class="sticky-cta btn btn--primary">Nhận ưu đãi</a>
+</body>
+</html>
