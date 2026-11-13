@@ -30,7 +30,6 @@
     <div class="wrap top__bar">
       <a href="#top" class="top__logo"><img src="assets/logo-alfe.webp" alt="ALFE" width="600" height="159"></a>
       <p class="top__mall"><i class="ph-fill ph-tiktok-logo" aria-hidden="true"></i>Official TikTok Mall</p>
-      <p class="top__zalo"><span class="zalo-badge" aria-hidden="true">Zalo</span><span><small>Zalo hỗ trợ 24/7:</small><b data-ph>09xx.xxx.xxx</b></span></p>
       <a href="#san-pham" class="top__link">Sản phẩm</a>
       <a href="#dang-ky" class="btn btn--primary btn--sm" data-magnetic>Đăng ký ngay<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
     </div>
@@ -47,13 +46,12 @@
           <div class="hero__product" aria-hidden="true">
             <img class="hero__img hero__img--0" src="assets/white-program-bottle.webp" alt="" loading="eager">
             <img class="hero__img hero__img--1" src="assets/beauty-conc-bottle.webp" alt="" loading="eager">
-            <img class="hero__img hero__img--2" src="assets/deep-essence-bottle.webp" alt="" loading="eager">
-            <img class="hero__img hero__img--3" src="assets/beauty-conc-box.webp" alt="" loading="eager">
+            <img class="hero__img hero__img--2" src="assets/beauty-conc-box.webp" alt="" loading="eager">
           </div>
           <ul class="hl-cards" data-stagger data-ph>
             <li class="hl-card"><i class="ph-fill ph-device-mobile hl-card__ico" aria-hidden="true"></i><p><span>Top 1 GMV battle:</span> <b>iPhone 18 Pro Max</b> <em>256GB</em></p></li>
             <li class="hl-card"><i class="ph-fill ph-sparkle hl-card__ico" aria-hidden="true"></i><p><span>Top 2 GMV battle:</span> <b>mặt nạ ánh sáng</b> <em>sinh học Halio</em></p></li>
-            <li class="hl-card"><i class="ph-fill ph-ticket hl-card__ico" aria-hidden="true"></i><p><span>Nhiệm vụ theo ngày:</span> <b>9 e-voucher,</b> <em>3 giải mỗi ngày</em></p></li>
+            <li class="hl-card"><i class="ph-fill ph-ticket hl-card__ico" aria-hidden="true"></i><p><span>Nhiệm vụ theo ngày:</span> <b>cơ hội nhận</b> <em>E-Voucher</em></p></li>
             <li class="hl-card"><i class="ph-fill ph-shopping-bag hl-card__ico" aria-hidden="true"></i><p><span>Người mua top spender 3 ngày:</span> <b>iPhone 18 Pro</b> <em>256GB</em></p></li>
           </ul>
           <div class="countdown" data-countdown data-target="2026-11-20T23:59:00+07:00" aria-label="Thời gian còn lại trước khi đóng đăng ký">
@@ -76,36 +74,37 @@
           </div>
           <div class="form__fields">
             <div class="field">
-              <label for="ho_ten">Họ và tên</label>
+              <label for="ho_ten">Họ và tên <span class="req" aria-hidden="true">*</span></label>
               <div class="field__box"><i class="ph ph-user" aria-hidden="true"></i><input id="ho_ten" name="ho_ten" type="text" autocomplete="name" placeholder="Nhập họ và tên của bạn" required></div>
               <p class="field__error" data-error-for="ho_ten" aria-live="polite"></p>
             </div>
             <div class="field">
-              <label for="so_dien_thoai">SĐT/Zalo</label>
+              <label for="so_dien_thoai">SĐT/Zalo <span class="req" aria-hidden="true">*</span></label>
               <div class="field__box"><i class="ph ph-phone" aria-hidden="true"></i><input id="so_dien_thoai" name="so_dien_thoai" type="tel" autocomplete="tel" placeholder="Nhập số điện thoại hoặc Zalo" required inputmode="tel"></div>
               <p class="field__error" data-error-for="so_dien_thoai" aria-live="polite"></p>
             </div>
             <div class="field">
-              <label for="email">Email</label>
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
               <div class="field__box"><i class="ph ph-envelope-simple" aria-hidden="true"></i><input id="email" name="email" type="email" autocomplete="email" placeholder="Nhập email của bạn" required></div>
               <p class="field__error" data-error-for="email" aria-live="polite"></p>
             </div>
             <div class="field">
-              <label for="tiktok">Link TikTok</label>
+              <label for="tiktok">Link TikTok <span class="req" aria-hidden="true">*</span></label>
               <div class="field__box"><i class="ph ph-tiktok-logo" aria-hidden="true"></i><input id="tiktok" name="tiktok" type="text" autocomplete="off" placeholder="Link TikTok hoặc @username" required></div>
               <p class="field__error" data-error-for="tiktok" aria-live="polite"></p>
             </div>
             <div class="field">
-              <label for="dia_chi">Địa chỉ nhận mẫu thử</label>
+              <label for="dia_chi">Địa chỉ nhận mẫu thử <span class="req" aria-hidden="true">*</span></label>
               <div class="field__box"><i class="ph ph-map-pin" aria-hidden="true"></i><input id="dia_chi" name="dia_chi" type="text" autocomplete="street-address" placeholder="Số nhà, đường, phường, tỉnh/thành" required></div>
               <p class="field__error" data-error-for="dia_chi" aria-live="polite"></p>
             </div>
             <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
             <label class="check">
-              <input type="checkbox" name="dong_y" value="yes">
-              <span>Tôi đồng ý cung cấp thông tin để ALFE liên hệ và gửi sample.</span>
+              <input type="checkbox" name="dong_y" value="yes" required>
+              <span>Tôi đồng ý cung cấp thông tin để ALFE liên hệ và gửi sample. <span class="req" aria-hidden="true">*</span></span>
             </label>
             <p class="field__error" data-error-for="dong_y" aria-live="polite"></p>
+            <p class="form__req"><span class="req" aria-hidden="true">*</span> Thông tin bắt buộc điền</p>
             <button type="submit" class="btn btn--primary btn--block btn--lg" data-magnetic>
               <span class="btn__label">Đăng ký ngay - Nhận sample</span>
               <span class="btn__spinner" aria-hidden="true"></span>
@@ -133,24 +132,21 @@
           <h2>Sản phẩm trong chiến dịch</h2>
         </div>
         <p class="sec-sub" data-reveal>Sample gửi tận nhà cho creator, gắn giỏ hàng trên TikTok Shop</p>
-        <ul class="prods" data-stagger>
+        <ul class="prods prods--3" data-stagger>
           <li class="prod" data-ph data-tilt>
             <figure class="prod__img"><img src="assets/beauty-conc-bottle.webp" alt="ALFE Beauty Conc" loading="lazy"></figure>
-            <div class="prod__text"><h3>ALFE Beauty Conc</h3><p>5.000 mg Collagen Peptid. Hỗ trợ da sáng mịn và tăng đàn hồi.</p></div>
+            <div class="prod__text"><h3>ALFE Beauty Conc</h3><p>Collagen nước. Hỗ trợ da sáng mịn và tăng đàn hồi.</p><ul class="prod__usps"><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Collagen Peptid 5.000 mg</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Elastin peptid 10 mg</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Acid Hyaluronic 5 mg</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Sắt 5 mg</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Vitamin B2, B6</li></ul></div>
           </li>
           <li class="prod" data-ph data-tilt>
             <figure class="prod__img"><img src="assets/white-program-bottle.webp" alt="ALFE White Program" loading="lazy"></figure>
-            <div class="prod__text"><h3>ALFE White Program</h3><p>Chiết xuất Placenta tinh khiết. Hỗ trợ da trắng mịn và tươi sáng.</p></div>
-          </li>
-          <li class="prod" data-ph data-tilt>
-            <figure class="prod__img"><img src="assets/deep-essence-bottle.webp" alt="ALFE Deep Essence" loading="lazy"></figure>
-            <div class="prod__text"><h3>ALFE Deep Essence</h3><p>Glucosylceramid. Hỗ trợ dưỡng ẩm da và tăng đàn hồi.</p></div>
+            <div class="prod__text"><h3>ALFE White Program</h3><p>Collagen nước. Hỗ trợ da trắng mịn và tươi sáng.</p><ul class="prod__usps"><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Chiết xuất Placenta tinh khiết 200 mg</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Collagen Peptid 1.000 mg</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Sắt 5 mg, L-cystin 5 mg</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Vitamin B2, B6</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Chiết xuất hạt ý dĩ, Actiso, hồng hoa, diếp cá</li></ul></div>
           </li>
           <li class="prod prod--wide" data-ph data-tilt>
             <figure class="prod__img"><img src="assets/powder-box.webp" alt="ALFE Beauty Conc Powder" loading="lazy"></figure>
             <div class="prod__text"><h3>ALFE Beauty Conc Powder</h3><p>Dạng bột tiện mang theo, pha cùng nước hoặc đồ uống.</p></div>
           </li>
         </ul>
+        <ul class="usps" data-stagger data-ph><li class="usp"><i class="ph-fill ph-flask usp__ico" aria-hidden="true"></i><p><b>Công thức độc quyền</b>Collagen + Sắt</p></li><li class="usp"><i class="ph-fill ph-seal-check usp__ico" aria-hidden="true"></i><p><b>Dược phẩm Taisho Nhật Bản</b>Nhập khẩu và phân phối chính hãng bởi DHG Pharma</p></li><li class="usp"><i class="ph-fill ph-trophy usp__ico" aria-hidden="true"></i><p><b>Top 1 doanh số</b>kênh nhà thuốc</p></li><li class="usp"><i class="ph-fill ph-heart usp__ico" aria-hidden="true"></i><p><b>94% người dùng</b>thấy hiệu quả</p></li></ul>
       </div>
     </section>
     <section class="kit">
@@ -158,10 +154,10 @@
         <div class="kit__text" data-reveal>
           <h2>Bộ sample gửi tận nhà cho bạn</h2>
           <p class="kit__sub">Đăng ký là nhận trọn bộ để trải nghiệm trước, lên live tự tin chốt đơn.</p>
-          <ul class="kit__list" data-stagger data-ph><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Hộp ALFE Beauty Conc 10 chai</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Hộp ALFE White Program 10 chai</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Chai lẻ Deep Essence để thử</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Gói ALFE Beauty Conc Powder</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Thư mời và kịch bản live</li></ul>
+          <ul class="kit__list" data-stagger data-ph><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Hộp ALFE Beauty Conc 10 chai</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Hộp ALFE White Program 10 chai</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Hộp ALFE Beauty Conc Powder</li><li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Thư mời và kịch bản live</li></ul>
           <a href="#dang-ky" class="btn btn--primary" data-magnetic>Đăng ký nhận sample<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
         </div>
-        <div class="kit__stage kit__stage--6" data-reveal aria-hidden="true"><img class="kit__img kit__img--0" src="assets/beauty-conc-box.webp" alt="" loading="lazy"><img class="kit__img kit__img--1" src="assets/white-program-box.webp" alt="" loading="lazy"><img class="kit__img kit__img--2" src="assets/beauty-conc-bottle.webp" alt="" loading="lazy"><img class="kit__img kit__img--3" src="assets/white-program-bottle.webp" alt="" loading="lazy"><img class="kit__img kit__img--4" src="assets/deep-essence-bottle.webp" alt="" loading="lazy"><img class="kit__img kit__img--5" src="assets/powder-box.webp" alt="" loading="lazy"></div>
+        <div class="kit__stage kit__stage--3" data-reveal aria-hidden="true"><img class="kit__img kit__img--0" src="assets/beauty-conc-box.webp" alt="" loading="lazy"><img class="kit__img kit__img--1" src="assets/white-program-box.webp" alt="" loading="lazy"><img class="kit__img kit__img--2" src="assets/powder-box.webp" alt="" loading="lazy"></div>
       </div>
       <div class="wrap"><div class="kv kv--note" data-ph><i class="ph ph-image" aria-hidden="true"></i><p>Chỗ này đặt ảnh design quà tặng &amp; thông tin chương trình</p></div></div>
     </section>
@@ -182,27 +178,23 @@
         </article>
         <div class="ranks ranks--4" data-stagger data-ph>
           <article class="rank">
-            <img class="rank__thumb" src="assets/beauty-conc-bottle.webp" alt="" loading="lazy">
             <i class="ph-fill ph-gift rank__ico" aria-hidden="true"></i>
             <div><p class="rank__label">Top 2</p><p class="rank__value rank__value--text">Mặt nạ ánh sáng sinh học Halio</p><p class="rank__note">1 giải - GMV tối thiểu 25 triệu</p></div>
           </article>
           <article class="rank">
-            <img class="rank__thumb" src="assets/white-program-bottle.webp" alt="" loading="lazy">
             <i class="ph-fill ph-gift rank__ico" aria-hidden="true"></i>
             <div><p class="rank__label">Top 3</p><p class="rank__value rank__value--text">E-voucher</p><p class="rank__note">1 giải - GMV tối thiểu 20 triệu</p></div>
           </article>
           <article class="rank">
-            <img class="rank__thumb" src="assets/deep-essence-bottle.webp" alt="" loading="lazy">
             <i class="ph-fill ph-gift rank__ico" aria-hidden="true"></i>
             <div><p class="rank__label">Top 4 - 5</p><p class="rank__value rank__value--text">E-voucher</p><p class="rank__note">2 giải - GMV tối thiểu 16 triệu</p></div>
           </article>
           <article class="rank">
-            <img class="rank__thumb" src="assets/beauty-conc-bottle.webp" alt="" loading="lazy">
             <i class="ph-fill ph-gift rank__ico" aria-hidden="true"></i>
             <div><p class="rank__label">Top 6 - 10</p><p class="rank__value rank__value--text">E-voucher</p><p class="rank__note">5 giải - GMV tối thiểu 10 triệu</p></div>
           </article>
         </div>
-        <div class="prizes prizes--stack" data-ph>
+        <div class="prizes prizes--split" data-ph>
           <article class="duration" data-reveal>
             <div>
               <h3><i class="ph-fill ph-crown-simple" aria-hidden="true"></i>Nhiệm vụ theo ngày</h3>
@@ -225,25 +217,7 @@
         <p class="note board__note"><i class="ph ph-info" aria-hidden="true"></i>Chỉ tính GMV của đơn hàng phát sinh trong phiên live từ 00:00 27/11 đến 23:59 29/11. Big KOL và D-Day không tranh giải.</p>
       </div>
     </section>
-    <section class="activation">
-      <img class="decor decor--l" src="assets/deep-essence-bottle.webp" alt="" aria-hidden="true" loading="lazy">
-      <img class="decor decor--r" src="assets/beauty-conc-bottle.webp" alt="" aria-hidden="true" loading="lazy">
-      <div class="wrap">
-        <div class="sec-head sec-head--center" data-reveal>
-          <h2>Thưởng kích hoạt creator</h2>
-          <p class="milestones" aria-label="Mốc 3, 6, 9 phiên"><b>3</b><i class="ph ph-arrow-right" aria-hidden="true"></i><b>6</b><i class="ph ph-arrow-right" aria-hidden="true"></i><b>9</b><span>phiên</span></p>
-        </div>
-        <div class="acts" data-stagger data-ph>
-          <article class="act"><span class="act__ico"><i class="ph-fill ph-gift ico" aria-hidden="true"></i></span><div><p class="act__title">Mốc 3 phiên</p><p class="act__formula">50 × 0.3M</p><p class="act__fund">Tổng quỹ <b>15M</b></p><p class="act__desc">Đạt 3 phiên hợp lệ</p></div></article>
-          <article class="act"><span class="act__ico"><i class="ph-fill ph-gift ico" aria-hidden="true"></i></span><div><p class="act__title">Mốc 6 phiên</p><p class="act__formula">30 × 0.8M</p><p class="act__fund">Tổng quỹ <b>24M</b></p><p class="act__desc">Đạt 6 phiên hợp lệ</p></div></article>
-          <article class="act"><span class="act__ico"><i class="ph-fill ph-gift ico" aria-hidden="true"></i></span><div><p class="act__title">Mốc 9 phiên</p><p class="act__formula">20 × 1.5M</p><p class="act__fund">Tổng quỹ <b>30M</b></p><p class="act__desc">Đạt 9 phiên hợp lệ</p></div></article>
-          <article class="act"><span class="act__ico"><i class="ph-fill ph-plant ico" aria-hidden="true"></i></span><div><p class="act__title">Thưởng tân binh</p><p class="act__formula">30 × 0.2M</p><p class="act__fund">Tổng quỹ <b>6M</b></p><p class="act__desc">Live đầu cho thương hiệu ≥120 phút, 3 đơn thành công</p></div></article>
-          <article class="act"><span class="act__ico"><i class="ph-fill ph-users-three ico" aria-hidden="true"></i></span><div><p class="act__title">Thưởng giới thiệu</p><p class="act__formula">30 × 0.1M</p><p class="act__fund">Tổng quỹ <b>3M</b></p><p class="act__desc">Mỗi creator mới đăng ký và có ≥1 phiên hợp lệ</p></div></article>
-          <article class="act"><span class="act__ico"><i class="ph-fill ph-chart-bar ico" aria-hidden="true"></i></span><div><p class="act__title">Commission Boost</p><p class="act__big">+3% GMV</p></div></article>
-        </div>
-        <p class="note"><i class="ph ph-info" aria-hidden="true"></i>Thưởng mốc phiên chỉ nhận mốc cao nhất đạt được.</p>
-      </div>
-    </section>
+
     <section class="perks">
       <div class="wrap">
         <h2 class="sec-title" data-reveal>Đặc quyền tiếp sức từ ALFE</h2>
@@ -273,7 +247,6 @@
             <ul>
             <li><i class="ph-fill ph-seal-check" aria-hidden="true"></i>Công bố Bộ Y Tế</li>
             <li><i class="ph-fill ph-seal-check" aria-hidden="true"></i>TikTok Mall chính hãng</li>
-            <li><i class="ph-fill ph-seal-check" aria-hidden="true"></i>Tem chống giả</li>
             </ul>
           </article>
         </div>
@@ -287,7 +260,6 @@
         <p>Công ty TNHH [Tên công ty] • MST: 03xxxxxxxx</p>
         <p>Số XNQC: 1156/2022/XNQC-ATTP</p>
         <p>Hotline KOC: 09xx.xxx.xxx</p>
-        <p>Zalo hỗ trợ Creator 24/7</p>
       </div>
     </div>
   </footer>
