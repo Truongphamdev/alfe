@@ -753,3 +753,18 @@ small { font-size: .62em; }
 @media (max-width: 1024px) {
   .theme-alfe .hero--cards .hero__product { width: 300px; height: 310px; }
 }
+/* Hộp quà vẽ lại: hộp vuông có viền miệng, nơ lớn, nắp dựa bên cạnh */
+.theme-alfe .hero__product::before { bottom: 126px; width: 176px; height: 30px; border-radius: 0; clip-path: polygon(7% 0, 93% 0, 100% 100%, 0 100%); background: linear-gradient(180deg, #3d0722, #7a1048); box-shadow: none; }
+.theme-alfe .hero__product::after { content: ""; position: absolute; left: 50%; translate: -50% 0; bottom: 120px; width: 300px; height: 220px; background: radial-gradient(ellipse at 50% 100%, rgb(255 140 200 / .55), transparent 68%); z-index: 0; pointer-events: none; }
+.theme-alfe .hero__img--0 { bottom: 116px; }
+.theme-alfe .hero__img--1 { bottom: 128px; }
+.theme-alfe .hero__img--2 { bottom: 134px; }
+.theme-alfe .hero__img--3 { bottom: 116px; }
+.theme-alfe .hero__img--4 { left: calc(50% - 100px); width: 240px; }
+.theme-alfe .hero--cards .hero__product { height: 340px; }
+@media (max-width: 1024px) { .theme-alfe .hero--cards .hero__product { height: 340px; } }
+.theme-alfe .hero__img--4 { left: calc(50% - 100px); width: 200px; }
+.theme-alfe .hero__img--0 { left: 1%; height: 150px; }
+.theme-alfe .hero__img--1 { left: 33%; height: 172px; }
+.theme-alfe .hero__img--2 { left: 58%; height: 132px; }
+.theme-alfe .hero__img--3 { right: -3%; height: 132px; }
