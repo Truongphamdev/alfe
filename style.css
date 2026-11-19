@@ -675,6 +675,14 @@ small { font-size: .62em; }
 .hl-card__ico--img, .hl-card__ico--img[src$=".svg"], .hl-card__ico--img[src*="iphone"], .hl-card__ico--img[src*="gift-"] { width: 58px; height: 58px; padding: 5px; border-radius: 14px; background: rgb(255 255 255 / .14); box-shadow: 0 0 0 2px var(--gift-neon), 0 0 16px 2px var(--gift-glow), inset 0 0 10px rgb(255 255 255 / .18); }
 .hl-card__ico--img[src*="halio"] { padding: 0; background: #fff; }
 .hero__box { position: absolute; }
+.hero__lid { position: absolute; z-index: 1; animation: gift-float 6s ease-in-out infinite alternate; }
+@media (prefers-reduced-motion: reduce) { .hero__lid { animation: none; } }
+
+/* 19/11 17:24: bỏ viền quanh ảnh quà, chỉ để nền sáng phía sau cho đỡ rối */
+.top1__img { padding: 10px; border: 0; border-radius: 0; box-shadow: none; background: radial-gradient(ellipse at 50% 52%, rgb(255 255 255 / .55) 0%, var(--gift-glow) 32%, transparent 70%); }
+.top1__img img { filter: drop-shadow(0 16px 20px rgb(0 0 0 / .45)) !important; }
+.hl-card__ico--img, .hl-card__ico--img[src$=".svg"], .hl-card__ico--img[src*="iphone"], .hl-card__ico--img[src*="gift-"] { padding: 3px; border-radius: 50%; box-shadow: none; background: radial-gradient(circle at 50% 50%, rgb(255 255 255 / .6) 0%, var(--gift-glow) 42%, transparent 72%); }
+.hl-card__ico--img[src*="halio"] { padding: 0; border-radius: 12px; background: #fff; box-shadow: 0 0 16px 2px var(--gift-glow); }
 
 /* ===== ALFE: tone Black + pink theo ref khách gửi 13/11 (nền đen, khối hồng, chữ hồng) ===== */
 .theme-alfe {
@@ -768,3 +776,26 @@ small { font-size: .62em; }
 .theme-alfe .hero__img--1 { left: 33%; height: 172px; }
 .theme-alfe .hero__img--2 { left: 58%; height: 132px; }
 .theme-alfe .hero__img--3 { right: -3%; height: 132px; }
+/* Hộp tròn tối viền neon + nắp bay (theo key visual brand) */
+.theme-alfe .hero__product::before { bottom: 104px; width: 192px; height: 32px; clip-path: none; border-radius: 50%; background: radial-gradient(ellipse at 50% 60%, #6a1245 0%, #1c0612 75%); box-shadow: 0 0 0 2px #ffd0e6, 0 0 14px 3px #ff4fa0; }
+.theme-alfe .hero__product::after { bottom: 108px; }
+.theme-alfe .hero__img--0 { bottom: 110px; }
+.theme-alfe .hero__img--1 { bottom: 120px; }
+.theme-alfe .hero__img--2 { bottom: 126px; }
+.theme-alfe .hero__img--3 { bottom: 110px; }
+.theme-alfe .hero__img--4 { left: calc(50% - 100px); width: 200px; bottom: 0; filter: drop-shadow(0 14px 22px rgb(255 45 139 / .5)); }
+.theme-alfe .hero__lid { top: -14px; right: -22px; width: 170px; rotate: 22deg; filter: drop-shadow(0 0 14px rgb(255 79 160 / .6)); }
+/* 19/11 17:23: ALFE bỏ hộp quà - sản phẩm bay lơ lửng, có vòng sáng uốn lượn và bong bóng bay xung quanh */
+.theme-alfe .hero__product::before { left: calc(50% - 150px); translate: none; bottom: 55px; width: 300px; height: 110px; rotate: -10deg; clip-path: none; border-radius: 50%; background: none; border: 2.5px solid rgb(255 255 255 / .8); box-shadow: 0 0 20px 5px rgb(255 120 190 / .7), inset 0 0 20px 4px rgb(255 120 190 / .6); z-index: 1; }
+.theme-alfe .hero__product::after { bottom: 20px; width: 340px; height: 300px; background: radial-gradient(ellipse at 50% 50%, rgb(255 150 205 / .6), transparent 66%); }
+.theme-alfe .hero__img--0 { left: -1%; bottom: 84px; height: 176px; rotate: -20deg; }
+.theme-alfe .hero__img--1 { left: 31%; bottom: 96px; height: 208px; rotate: -3deg; }
+.theme-alfe .hero__img--2 { left: 57%; bottom: 104px; height: 160px; rotate: 8deg; }
+.theme-alfe .hero__img--3 { right: -5%; bottom: 80px; height: 158px; rotate: 15deg; }
+.theme-alfe .hero__img { animation: gift-float 5.5s ease-in-out infinite alternate; }
+.theme-alfe .hero__img--1 { animation-delay: -1.4s; }
+.theme-alfe .hero__img--2 { animation-delay: -2.8s; }
+.theme-alfe .hero__img--3 { animation-delay: -4s; }
+.theme-alfe .hero__box { left: calc(50% - 160px); bottom: 0; width: 320px; height: auto; z-index: 5; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .theme-alfe .hero__img { animation: none; } }
+@media (min-width: 1025px) { .theme-alfe .hero__product::before { left: calc(50% - 132px); } .theme-alfe .hero__box { left: calc(50% - 142px); } .theme-alfe .hero__product { margin-left: 14px; } }
