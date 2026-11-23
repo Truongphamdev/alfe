@@ -688,6 +688,10 @@ small { font-size: .62em; }
 .hl-card__ico--img, .hl-card__ico--img[src$=".svg"], .hl-card__ico--img[src*="iphone"], .hl-card__ico--img[src*="gift-"] { width: 60px; height: 60px; padding: 0; border-radius: 0; object-fit: contain; box-shadow: none; background: radial-gradient(circle at 50% 50%, rgb(255 255 255 / .5) 0%, var(--gift-glow) 38%, transparent 70%); }
 .hl-card__ico--img[src*="halio"] { border-radius: 10px; background: #fff; box-shadow: 0 0 14px 2px var(--gift-glow); }
 
+/* ===== Sửa theo comment khách 23/11 ===== */
+/* Chú thích dấu * / ** ngay dưới dải USP thương hiệu (A-02, R-10) */
+.usp-notes { margin-top: 10px; display: grid; gap: 2px; text-align: center; font-size: 13px; line-height: 1.45; color: var(--muted); }
+
 /* ===== ALFE: tone Black + pink theo ref khách gửi 13/11 (nền đen, khối hồng, chữ hồng) ===== */
 .theme-alfe {
   --ink: #14060d;
@@ -803,3 +807,15 @@ small { font-size: .62em; }
 .theme-alfe .hero__box { left: calc(50% - 160px); bottom: 0; width: 320px; height: auto; z-index: 5; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .theme-alfe .hero__img { animation: none; } }
 @media (min-width: 1025px) { .theme-alfe .hero__product::before { left: calc(50% - 132px); } .theme-alfe .hero__box { left: calc(50% - 142px); } .theme-alfe .hero__product { margin-left: 14px; } }
+/* 23/11 (A-04): bộ sample đúng số lượng: 3 chai Beauty Conc + 3 chai White Program + 5 gói bột.
+   2 nhóm chai xếp chồng lệch (chai giữa đứng trước), 5 gói xòe quạt. --h co theo bề rộng khung (cqw) nên không tràn, không cắt. */
+.theme-alfe .kit__stage--groups { --gap: clamp(8px, 2vw, 28px); container-type: inline-size; display: flex; align-items: flex-end; justify-content: center; gap: var(--gap); height: auto; min-height: 0; padding: 12px 0 10px; }
+.theme-alfe .kit__group { --h: min(270px, calc((100cqw - 2 * var(--gap)) / 2.15)); display: flex; align-items: flex-end; flex: none; }
+.theme-alfe .kit__unit { display: block; width: auto; max-width: none; filter: drop-shadow(0 14px 14px var(--shadow-c)); }
+.theme-alfe .kit__group--bottle .kit__unit { height: calc(var(--h) * .9); position: relative; z-index: 1; }
+.theme-alfe .kit__group--bottle .kit__unit + .kit__unit { margin-left: calc(var(--h) * -.13); }
+.theme-alfe .kit__group--bottle .kit__unit:nth-child(2) { height: var(--h); z-index: 3; }
+.theme-alfe .kit__group--bottle .kit__unit:nth-child(3) { z-index: 2; }
+.theme-alfe .kit__group--sachet { padding-inline: calc(var(--h) * .15); }
+.theme-alfe .kit__group--sachet .kit__unit { height: calc(var(--h) * .76); transform-origin: 50% 100%; rotate: calc((var(--i) - 2) * 6deg); filter: drop-shadow(0 10px 10px var(--shadow-c)); }
+.theme-alfe .kit__group--sachet .kit__unit + .kit__unit { margin-left: calc(var(--h) * -.05); }
